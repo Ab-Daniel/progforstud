@@ -1,0 +1,51 @@
+public class Student 
+{
+	
+	public Student (String aName, double anAvgScore)
+	{	
+		name = aName;
+		
+		avgScore = anAvgScore;	
+	}
+	
+	void numScores(int numberOfScores)
+	{
+		numOfScores = numberOfScores;
+	}
+	
+	void scoreGrade(double aScore)
+	{
+		score = aScore;
+	}
+	
+	void sumScores()
+	{
+		sumOfScores =  score * numOfScores;	
+	}
+	
+	void theAverage()
+	{
+		avgScore = sumOfScores/numOfScores;
+	}
+	
+	public String getName ()
+	{
+		return name;
+	}
+	
+	public double getAverageScore ()
+	{
+		return avgScore;
+	}
+	
+	private String name;
+	
+	private double avgScore;
+	
+	private int numOfScores;
+	
+	private double sumOfScores;
+	
+	private double score;
+	
+}
